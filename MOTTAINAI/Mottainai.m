@@ -12,8 +12,8 @@
 @implementation Mottainai
 
 @dynamic created;
-@dynamic text;
-@dynamic sync;
 @dynamic group;
+@dynamic sync;
+@dynamic text;
 
 @end

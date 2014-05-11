@@ -31,7 +31,7 @@
     Mottainai *newMottainai = [NSEntityDescription insertNewObjectForEntityForName:@"Mottainai"
                                                          inManagedObjectContext:self.managedObjectContext];
     
-    newMottainai.created = [[NSDate date] timeIntervalSinceReferenceDate];
+    newMottainai.created = [NSDate date] ;
     newMottainai.sync = false;
     NSError *error;
     if (![self.managedObjectContext save:&error]){
@@ -47,7 +47,7 @@
     
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
-    
+
 }
 
 - (void)didReceiveMemoryWarning

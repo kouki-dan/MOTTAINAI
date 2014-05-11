@@ -12,9 +12,9 @@
 
 @interface Mottainai : NSManagedObject
 
-@property (nonatomic) NSTimeInterval created;
+@property (nonatomic, retain) NSDate * created;
+@property (nonatomic, retain) NSNumber * group;
+@property (nonatomic, retain) NSNumber * sync;
 @property (nonatomic, retain) NSString * text;
-@property (nonatomic) BOOL sync;
-@property (nonatomic) int32_t group;
 
 @end

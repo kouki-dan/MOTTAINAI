@@ -22,9 +22,9 @@
 		1E5BB7F2191E5EA7004E99FA /* MOTTAINAITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB7F1191E5EA7004E99FA /* MOTTAINAITests.m */; };
 		1E5BB7FC191F269F004E99FA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7FB191F269F004E99FA /* CoreData.framework */; };
 		1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */; };
-		1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB801191F2AE7004E99FA /* Mottainai.m */; };
 		1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB804191F2BC5004E99FA /* MainViewController.m */; };
 		1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */; };
+		1E5BB80B191F380E004E99FA /* Mottainai.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB80A191F380E004E99FA /* Mottainai.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 		1E5BB7F1191E5EA7004E99FA /* MOTTAINAITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOTTAINAITests.m; sourceTree = "<group>"; };
 		1E5BB7FB191F269F004E99FA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1E5BB7FE191F26D0004E99FA /* Mottainai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mottainai.xcdatamodel; sourceTree = "<group>"; };
-		1E5BB800191F2AE7004E99FA /* Mottainai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mottainai.h; sourceTree = "<group>"; };
-		1E5BB801191F2AE7004E99FA /* Mottainai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mottainai.m; sourceTree = "<group>"; };
 		1E5BB803191F2BC5004E99FA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1E5BB804191F2BC5004E99FA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1E5BB806191F30DF004E99FA /* OutputMottianaiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputMottianaiTableViewController.h; sourceTree = "<group>"; };
 		1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputMottianaiTableViewController.m; sourceTree = "<group>"; };
+		1E5BB809191F380E004E99FA /* Mottainai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mottainai.h; sourceTree = "<group>"; };
+		1E5BB80A191F380E004E99FA /* Mottainai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mottainai.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */,
-				1E5BB800191F2AE7004E99FA /* Mottainai.h */,
-				1E5BB801191F2AE7004E99FA /* Mottainai.m */,
+				1E5BB809191F380E004E99FA /* Mottainai.h */,
+				1E5BB80A191F380E004E99FA /* Mottainai.m */,
 				1E5BB7CC191E5EA7004E99FA /* MOTTAINAI */,
 				1E5BB7EB191E5EA7004E99FA /* MOTTAINAITests */,
 				1E5BB7C5191E5EA7004E99FA /* Frameworks */,
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5BB80B191F380E004E99FA /* Mottainai.m in Sources */,
 				1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */,
 				1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */,
-				1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */,
 				1E5BB7D7191E5EA7004E99FA /* AppDelegate.m in Sources */,
 				1E5BB7D3191E5EA7004E99FA /* main.m in Sources */,
 				1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */,

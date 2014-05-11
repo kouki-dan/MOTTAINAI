@@ -70,8 +70,11 @@
     
     // Configure the cell...
     Mottainai *mottainai = [self.mottainai objectAtIndex:indexPath.row];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd 'at' HH:mm:ss";
 
-    NSString *intervalString = [NSString stringWithFormat:@"%f", mottainai.created];
+
+    NSString *intervalString = [dateFormatter stringFromDate:mottainai.created];
     
     //TODO:Convert intervalString to formatted string (Now, the text is all numbers)
     cell.textLabel.text = intervalString;
