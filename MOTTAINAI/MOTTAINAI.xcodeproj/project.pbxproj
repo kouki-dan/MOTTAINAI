@@ -24,6 +24,7 @@
 		1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */; };
 		1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB801191F2AE7004E99FA /* Mottainai.m */; };
 		1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB804191F2BC5004E99FA /* MainViewController.m */; };
+		1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		1E5BB801191F2AE7004E99FA /* Mottainai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mottainai.m; sourceTree = "<group>"; };
 		1E5BB803191F2BC5004E99FA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1E5BB804191F2BC5004E99FA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1E5BB806191F30DF004E99FA /* OutputMottianaiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputMottianaiTableViewController.h; sourceTree = "<group>"; };
+		1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputMottianaiTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				1E5BB7D5191E5EA7004E99FA /* AppDelegate.h */,
 				1E5BB7D6191E5EA7004E99FA /* AppDelegate.m */,
 				1E5BB7D8191E5EA7004E99FA /* Main.storyboard */,
+				1E5BB806191F30DF004E99FA /* OutputMottianaiTableViewController.h */,
+				1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */,
 				1E5BB803191F2BC5004E99FA /* MainViewController.h */,
 				1E5BB804191F2BC5004E99FA /* MainViewController.m */,
 				1E5BB7DE191E5EA7004E99FA /* Images.xcassets */,
@@ -266,6 +271,7 @@
 				1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */,
 				1E5BB7D7191E5EA7004E99FA /* AppDelegate.m in Sources */,
 				1E5BB7D3191E5EA7004E99FA /* main.m in Sources */,
+				1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
