@@ -21,6 +21,10 @@
 		1E5BB7E8191E5EA7004E99FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7CA191E5EA7004E99FA /* UIKit.framework */; };
 		1E5BB7F0191E5EA7004E99FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BB7EE191E5EA7004E99FA /* InfoPlist.strings */; };
 		1E5BB7F2191E5EA7004E99FA /* MOTTAINAITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB7F1191E5EA7004E99FA /* MOTTAINAITests.m */; };
+		1E5BB7FC191F269F004E99FA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7FB191F269F004E99FA /* CoreData.framework */; };
+		1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */; };
+		1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB801191F2AE7004E99FA /* Mottainai.m */; };
+		1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB804191F2BC5004E99FA /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		1E5BB7ED191E5EA7004E99FA /* MOTTAINAITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MOTTAINAITests-Info.plist"; sourceTree = "<group>"; };
 		1E5BB7EF191E5EA7004E99FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E5BB7F1191E5EA7004E99FA /* MOTTAINAITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOTTAINAITests.m; sourceTree = "<group>"; };
+		1E5BB7FB191F269F004E99FA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1E5BB7FE191F26D0004E99FA /* Mottainai.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mottainai.xcdatamodel; sourceTree = "<group>"; };
+		1E5BB800191F2AE7004E99FA /* Mottainai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mottainai.h; sourceTree = "<group>"; };
+		1E5BB801191F2AE7004E99FA /* Mottainai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mottainai.m; sourceTree = "<group>"; };
+		1E5BB803191F2BC5004E99FA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1E5BB804191F2BC5004E99FA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5BB7FC191F269F004E99FA /* CoreData.framework in Frameworks */,
 				1E5BB7C9191E5EA7004E99FA /* CoreGraphics.framework in Frameworks */,
 				1E5BB7CB191E5EA7004E99FA /* UIKit.framework in Frameworks */,
 				1E5BB7C7191E5EA7004E99FA /* Foundation.framework in Frameworks */,
@@ -82,6 +93,9 @@
 		1E5BB7BA191E5EA6004E99FA = {
 			isa = PBXGroup;
 			children = (
+				1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */,
+				1E5BB800191F2AE7004E99FA /* Mottainai.h */,
+				1E5BB801191F2AE7004E99FA /* Mottainai.m */,
 				1E5BB7CC191E5EA7004E99FA /* MOTTAINAI */,
 				1E5BB7EB191E5EA7004E99FA /* MOTTAINAITests */,
 				1E5BB7C5191E5EA7004E99FA /* Frameworks */,
@@ -101,6 +115,7 @@
 		1E5BB7C5191E5EA7004E99FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BB7FB191F269F004E99FA /* CoreData.framework */,
 				1E5BB7C6191E5EA7004E99FA /* Foundation.framework */,
 				1E5BB7C8191E5EA7004E99FA /* CoreGraphics.framework */,
 				1E5BB7CA191E5EA7004E99FA /* UIKit.framework */,
@@ -115,6 +130,8 @@
 				1E5BB7D5191E5EA7004E99FA /* AppDelegate.h */,
 				1E5BB7D6191E5EA7004E99FA /* AppDelegate.m */,
 				1E5BB7D8191E5EA7004E99FA /* Main.storyboard */,
+				1E5BB803191F2BC5004E99FA /* MainViewController.h */,
+				1E5BB804191F2BC5004E99FA /* MainViewController.m */,
 				1E5BB7DB191E5EA7004E99FA /* ViewController.h */,
 				1E5BB7DC191E5EA7004E99FA /* ViewController.m */,
 				1E5BB7DE191E5EA7004E99FA /* Images.xcassets */,
@@ -249,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */,
+				1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */,
+				1E5BB802191F2AE7004E99FA /* Mottainai.m in Sources */,
 				1E5BB7DD191E5EA7004E99FA /* ViewController.m in Sources */,
 				1E5BB7D7191E5EA7004E99FA /* AppDelegate.m in Sources */,
 				1E5BB7D3191E5EA7004E99FA /* main.m in Sources */,
@@ -456,6 +476,7 @@
 				1E5BB7F7191E5EA7004E99FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E5BB7F8191E5EA7004E99FA /* Build configuration list for PBXNativeTarget "MOTTAINAITests" */ = {
 			isa = XCConfigurationList;
@@ -464,8 +485,22 @@
 				1E5BB7FA191E5EA7004E99FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E5BB7FD191F26D0004E99FA /* Mottainai.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E5BB7FE191F26D0004E99FA /* Mottainai.xcdatamodel */,
+			);
+			currentVersion = 1E5BB7FE191F26D0004E99FA /* Mottainai.xcdatamodel */;
+			path = Mottainai.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E5BB7BB191E5EA6004E99FA /* Project object */;
 }
