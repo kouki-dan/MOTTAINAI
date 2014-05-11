@@ -10,6 +10,8 @@
 
 @interface MainViewController ()
 
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
 @end
 
 @implementation MainViewController
@@ -25,12 +27,26 @@
 
 - (IBAction)touchMottainai:(id)sender {
     NSLog(@"You feel MOTTAINAI!!");
+    
+    Mottainai *newMottainai = [NSEntityDescription insertNewObjectForEntityForName:@"Mottainai"
+                                                         inManagedObjectContext:self.managedObjectContext];
+    
+    newMottainai.created = [[NSDate date] timeIntervalSinceReferenceDate];
+    newMottainai.sync = false;
+    NSError *error;
+    if (![self.managedObjectContext save:&error]){
+        NSLog(@"save failed: %@", [error localizedDescription]);
+    }
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    self.managedObjectContext = appDelegate.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning
