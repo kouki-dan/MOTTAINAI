@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mottainai.h"
+#import "AppDelegate.h"
 
 @interface OutputMottianaiTableViewController : UITableViewController
+
+@property (nonatomic) NSArray *mottainai;
 
 @end

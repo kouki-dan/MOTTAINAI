@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
     
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    
+    self.mottainai = [appDelegate getAllMottainai];
+    [self.tableView reloadData];
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -44,28 +50,34 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    
+    return [self.mottainai count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Mottainai" forIndexPath:indexPath];
     
     // Configure the cell...
+    Mottainai *mottainai = [self.mottainai objectAtIndex:indexPath.row];
+
+    NSString *intervalString = [NSString stringWithFormat:@"%f", mottainai.created];
+    
+    //TODO:Convert intervalString to formatted string (Now, the text is all numbers)
+    cell.textLabel.text = intervalString;
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
