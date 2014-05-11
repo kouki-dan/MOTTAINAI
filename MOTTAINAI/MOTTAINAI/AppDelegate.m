@@ -60,6 +60,18 @@
 
 /********* /CORE DATA ************/
 
+- (NSArray*)getAllMottainai
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Mottainai"
+                                              inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    NSArray *fetchedMottainai = [self.managedObjectContext executeFetchRequest:fetchRequest
+                                                                         error:&error];
+    return fetchedMottainai;
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

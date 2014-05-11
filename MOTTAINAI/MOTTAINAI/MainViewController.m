@@ -47,6 +47,7 @@
     
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
+    
 }
 
 - (void)didReceiveMemoryWarning
