@@ -27,17 +27,19 @@
 {
     [super viewDidLoad];
     
-    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    
-    self.mottainai = [appDelegate getAllMottainai];
-    [self.tableView reloadData];
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    
+    self.mottainai = [appDelegate getAllMottainai];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +75,6 @@
     
     //TODO:Convert intervalString to formatted string (Now, the text is all numbers)
     cell.textLabel.text = intervalString;
-    
     
     return cell;
 }
