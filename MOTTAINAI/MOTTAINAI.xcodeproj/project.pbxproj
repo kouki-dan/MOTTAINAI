@@ -25,6 +25,7 @@
 		1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB804191F2BC5004E99FA /* MainViewController.m */; };
 		1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */; };
 		1E5BB80B191F380E004E99FA /* Mottainai.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5BB80A191F380E004E99FA /* Mottainai.m */; };
+		1E5BB8561920FF98004E99FA /* Mottainai.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E5BB8551920FF98004E99FA /* Mottainai.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutputMottianaiTableViewController.m; sourceTree = "<group>"; };
 		1E5BB809191F380E004E99FA /* Mottainai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mottainai.h; sourceTree = "<group>"; };
 		1E5BB80A191F380E004E99FA /* Mottainai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mottainai.m; sourceTree = "<group>"; };
+		1E5BB8551920FF98004E99FA /* Mottainai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mottainai.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		1E5BB7CC191E5EA7004E99FA /* MOTTAINAI */ = {
 			isa = PBXGroup;
 			children = (
+				1E5BB8551920FF98004E99FA /* Mottainai.png */,
 				1E5BB7D5191E5EA7004E99FA /* AppDelegate.h */,
 				1E5BB7D6191E5EA7004E99FA /* AppDelegate.m */,
 				1E5BB7D8191E5EA7004E99FA /* Main.storyboard */,
@@ -247,6 +250,7 @@
 			files = (
 				1E5BB7DF191E5EA7004E99FA /* Images.xcassets in Resources */,
 				1E5BB7D1191E5EA7004E99FA /* InfoPlist.strings in Resources */,
+				1E5BB8561920FF98004E99FA /* Mottainai.png in Resources */,
 				1E5BB7DA191E5EA7004E99FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

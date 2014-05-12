@@ -73,7 +73,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd 'at' HH:mm:ss";
 
-
     NSString *intervalString = [dateFormatter stringFromDate:mottainai.created];
     
     //TODO:Convert intervalString to formatted string (Now, the text is all numbers)
