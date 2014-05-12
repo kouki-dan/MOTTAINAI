@@ -39,6 +39,8 @@
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     
     self.mottainai = [appDelegate getAllMottainai];
+    
+    self.mottainai = [[self.mottainai sortedArrayUsingSelector:@selector(compareDateAsc:)] mutableCopy];
     [self.tableView reloadData];
 }
 

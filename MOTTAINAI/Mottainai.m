@@ -16,4 +16,8 @@
 @dynamic sync;
 @dynamic text;
 
+- (NSComparisonResult) compareDateAsc:(Mottainai *)mottainai {
+    return [mottainai.created compare:self.created];
+}
+
 @end
