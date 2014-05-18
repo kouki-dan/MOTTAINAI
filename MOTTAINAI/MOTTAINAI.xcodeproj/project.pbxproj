@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E11E2DF1928E3E300508731 /* GraphMottainaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E11E2DE1928E3E300508731 /* GraphMottainaiViewController.m */; };
 		1E5BB7C7191E5EA7004E99FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7C6191E5EA7004E99FA /* Foundation.framework */; };
 		1E5BB7C9191E5EA7004E99FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7C8191E5EA7004E99FA /* CoreGraphics.framework */; };
 		1E5BB7CB191E5EA7004E99FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5BB7CA191E5EA7004E99FA /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E11E2DD1928E3E300508731 /* GraphMottainaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphMottainaiViewController.h; sourceTree = "<group>"; };
+		1E11E2DE1928E3E300508731 /* GraphMottainaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphMottainaiViewController.m; sourceTree = "<group>"; };
 		1E5BB7C3191E5EA7004E99FA /* MOTTAINAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOTTAINAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5BB7C6191E5EA7004E99FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E5BB7C8191E5EA7004E99FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 				1E5BB7D5191E5EA7004E99FA /* AppDelegate.h */,
 				1E5BB7D6191E5EA7004E99FA /* AppDelegate.m */,
 				1E5BB7D8191E5EA7004E99FA /* Main.storyboard */,
+				1E11E2DD1928E3E300508731 /* GraphMottainaiViewController.h */,
+				1E11E2DE1928E3E300508731 /* GraphMottainaiViewController.m */,
 				1E5BB806191F30DF004E99FA /* OutputMottianaiTableViewController.h */,
 				1E5BB807191F30DF004E99FA /* OutputMottianaiTableViewController.m */,
 				1E5BB803191F2BC5004E99FA /* MainViewController.h */,
@@ -273,6 +278,7 @@
 				1E5BB80B191F380E004E99FA /* Mottainai.m in Sources */,
 				1E5BB7FF191F26D0004E99FA /* Mottainai.xcdatamodeld in Sources */,
 				1E5BB805191F2BC5004E99FA /* MainViewController.m in Sources */,
+				1E11E2DF1928E3E300508731 /* GraphMottainaiViewController.m in Sources */,
 				1E5BB7D7191E5EA7004E99FA /* AppDelegate.m in Sources */,
 				1E5BB7D3191E5EA7004E99FA /* main.m in Sources */,
 				1E5BB808191F30DF004E99FA /* OutputMottianaiTableViewController.m in Sources */,
