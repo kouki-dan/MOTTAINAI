@@ -1,0 +1,5 @@
+platform :ios, '6.0' #プラットフォームの指定 iOS6.0以上
+xcodeproj './MOTTAINAI.xcodeproj'
+pod 'AFNetworking', '~> 2.0' 
+pod 'PNChart', '~> 0.5'
+
