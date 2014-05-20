@@ -11,6 +11,8 @@
 #import "Mottainai.h"
 #import "AppDelegate.h"
 
+#import "PNChart.h"
+
 @interface GraphMottainaiViewController : UIViewController
 
 @property (strong, nonatomic) NSArray *mottainai;

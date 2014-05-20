@@ -33,9 +33,24 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    
     self.mottainai = [appDelegate getAllMottainai];
     
+    PNLineChart *lineChart = [[PNLineChart alloc] initWithFrame:CGRectMake(0, 135.0, SCREEN_WIDTH, 200.0)];
+    [lineChart setXLabels:@[@"1",@"2",@"3",@"4"]];
+     
+    NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2, @186.2];
+    PNLineChartData *data01 = [PNLineChartData new];
+    data01.color = PNFreshGreen;
+    data01.itemCount = lineChart.xLabels.count;
+    data01.getData = ^(NSUInteger index) {
+        CGFloat yValue = [data01Array[index] floatValue];
+        return [PNLineChartDataItem dataItemWithY:yValue];
+    };
+
+    lineChart.chartData = @[data01];
+    [lineChart strokeChart];
+    
+    [self.view addSubview:lineChart];
 }
 
 
