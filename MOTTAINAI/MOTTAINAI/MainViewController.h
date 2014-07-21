@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 #import "Mottainai.h"
 #import "AppDelegate.h"
 
 @interface MainViewController : UIViewController
-
+{
+    SystemSoundID soundID;
+}
 @end

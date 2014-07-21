@@ -38,6 +38,9 @@
         NSLog(@"save failed: %@", [error localizedDescription]);
     }
     
+    
+    AudioServicesPlaySystemSound (soundID);
+    NSLog(@"%u",(unsigned int)soundID);
 }
 
 - (void)viewDidLoad
@@ -47,6 +50,12 @@
     
     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
     self.managedObjectContext = appDelegate.managedObjectContext;
+
+
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"mottainai" ofType:@"caf"];
+    NSLog(@"%@", path);
+    NSURL *url= [NSURL fileURLWithPath:path];
+    AudioServicesCreateSystemSoundID (CFBridgingRetain(url), &soundID);
 
 }
 
