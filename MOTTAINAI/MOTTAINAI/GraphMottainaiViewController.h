@@ -17,5 +17,8 @@
 
 @property (strong, nonatomic) NSArray *mottainai;
 @property (weak, nonatomic) IBOutlet PNLineChart *lineChart;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *termSelectionSegment;
+@property (strong, nonatomic) NSDictionary *chartLabels;
+@property NSString *selectedTerm;
 
 @end

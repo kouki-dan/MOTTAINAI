@@ -27,20 +27,45 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.termSelectionSegment addTarget:self
+                                  action:@selector(segmentValueChanged:)
+                        forControlEvents:UIControlEventValueChanged];
+
+    self.chartLabels = @{
+                      @"0":@[@"3ヶ月前",@"2ヶ月前",@"先月",@"今月"],
+                      @"1":@[@"3週前",@"先々週",@"先週",@"今週"],
+                      @"2":@[@"3日前",@"一昨日",@"昨日",@"今日"],
+                      @"3":@[@"4時間前",@"3時間前",@"2時間前",@"1時間前"],
+                    };
+    
+    self.selectedTerm = @"3";
 }
 
-
-- (void)viewWillAppear:(BOOL)animated
+- (void)segmentValueChanged:(id)sender
 {
+    UISegmentedControl *segment = (UISegmentedControl*) sender;
+    self.selectedTerm = [[NSString alloc] initWithFormat:@"%ld",(long)segment.selectedSegmentIndex];
+    
+    [self drawGraph];
+}
+
+- (void)drawGraph
+{
+
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     self.mottainai = [appDelegate getAllMottainai];
 
     /* 集計関数の使い方がわからないからループで集計 */
     // TODO
-   
+
+    for (UIView *view in [self.lineChart subviews]) {
+        [view removeFromSuperview];
+    }
     
-    [self.lineChart setXLabels:@[@"４日前",@"一昨日",@"昨日",@"今日"]];
-     
+    NSArray *labels = [self.chartLabels valueForKey:self.selectedTerm];
+    [self.lineChart setXLabels:labels];
+    
     NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2];
     PNLineChartData *data01 = [PNLineChartData new];
     data01.color = PNFreshGreen;
@@ -49,9 +74,18 @@
         CGFloat yValue = [data01Array[index] floatValue];
         return [PNLineChartDataItem dataItemWithY:yValue];
     };
-
+    
     self.lineChart.chartData = @[data01];
     [self.lineChart strokeChart];
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+
+    
+    [self drawGraph];
+    
     
 }
 

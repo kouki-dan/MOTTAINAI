@@ -100,8 +100,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="An4-Zi-f9b">
+                                <rect key="frame" x="21" y="97" width="279" height="29"/>
+                                <segments>
+                                    <segment title="月"/>
+                                    <segment title="週"/>
+                                    <segment title="日"/>
+                                    <segment title="時間"/>
+                                </segments>
+                            </segmentedControl>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-qd-9kS" customClass="PNLineChart">
-                                <rect key="frame" x="16" y="219" width="295" height="238"/>
+                                <rect key="frame" x="13" y="171" width="295" height="275"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -110,6 +119,7 @@
                     <navigationItem key="navigationItem" id="fSL-Qw-khR"/>
                     <connections>
                         <outlet property="lineChart" destination="MSz-qd-9kS" id="3Qa-aK-m9O"/>
+                        <outlet property="termSelectionSegment" destination="An4-Zi-f9b" id="IiE-Ao-Y30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilV-Jt-rT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
