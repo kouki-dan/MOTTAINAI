@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OIZ-XT-M3f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OIZ-XT-M3f">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller - Mottainai-->
+        <!--Mottainai-->
         <scene sceneID="ZUE-8H-c0B">
             <objects>
                 <viewController id="Den-KN-lSL" customClass="MainViewController" sceneMemberID="viewController">
@@ -18,7 +18,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blR-dJ-Z6R">
                                 <rect key="frame" x="34" y="118" width="253" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mottainai" image="Mottainai.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="-490" y="-119"/>
         </scene>
-        <!--Output Mottianai Table View Controller - Your Mottainai-->
+        <!--Your Mottainai-->
         <scene sceneID="fK7-sw-gD0">
             <objects>
                 <tableViewController id="Dqb-AM-Ymz" customClass="OutputMottianaiTableViewController" sceneMemberID="viewController">
@@ -100,15 +99,24 @@
                     <view key="view" contentMode="scaleToFill" id="RcX-WJ-gD8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-qd-9kS" customClass="PNLineChart">
+                                <rect key="frame" x="16" y="219" width="295" height="238"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fSL-Qw-khR"/>
+                    <connections>
+                        <outlet property="lineChart" destination="MSz-qd-9kS" id="3Qa-aK-m9O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilV-Jt-rT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="971" y="221"/>
         </scene>
-        <!--Navigation Controller - Data-->
+        <!--Data-->
         <scene sceneID="Qf8-YC-eq8">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ywl-SR-m69" sceneMemberID="viewController">
@@ -131,6 +139,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

@@ -38,26 +38,21 @@
     /* 集計関数の使い方がわからないからループで集計 */
     // TODO
    
-
-
-
     
-    PNLineChart *lineChart = [[PNLineChart alloc] initWithFrame:CGRectMake(0, 135.0, SCREEN_WIDTH, 200.0)];
-    [lineChart setXLabels:@[@"４日前",@"一昨日",@"昨日",@"今日"]];
+    [self.lineChart setXLabels:@[@"４日前",@"一昨日",@"昨日",@"今日"]];
      
     NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2];
     PNLineChartData *data01 = [PNLineChartData new];
     data01.color = PNFreshGreen;
-    data01.itemCount = lineChart.xLabels.count;
+    data01.itemCount = self.lineChart.xLabels.count;
     data01.getData = ^(NSUInteger index) {
         CGFloat yValue = [data01Array[index] floatValue];
         return [PNLineChartDataItem dataItemWithY:yValue];
     };
 
-    lineChart.chartData = @[data01];
-    [lineChart strokeChart];
+    self.lineChart.chartData = @[data01];
+    [self.lineChart strokeChart];
     
-    [self.view addSubview:lineChart];
 }
 
 

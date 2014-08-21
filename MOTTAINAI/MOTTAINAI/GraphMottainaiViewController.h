@@ -16,5 +16,6 @@
 @interface GraphMottainaiViewController : UIViewController
 
 @property (strong, nonatomic) NSArray *mottainai;
+@property (weak, nonatomic) IBOutlet PNLineChart *lineChart;
 
 @end
