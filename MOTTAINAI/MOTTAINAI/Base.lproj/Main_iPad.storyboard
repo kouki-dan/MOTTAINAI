@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OIZ-XT-M3f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="OIZ-XT-M3f">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
@@ -15,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="xL7-UC-zIR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Ei-Iq-qUD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blR-dJ-Z6R">
-                                <rect key="frame" x="34" y="118" width="253" height="253"/>
+                                <rect key="frame" x="258" y="118" width="253" height="253"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="B9X-H9-QOZ"/>
                                     <constraint firstAttribute="height" constant="253" id="BLp-ID-Sc3"/>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0G-Sk-ZJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="-444"/>
+            <point key="canvasLocation" x="356" y="-622"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TM7-gH-3Am">
@@ -61,14 +61,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ken-bg-Ny6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-490" y="-119"/>
+            <point key="canvasLocation" x="-770" y="-127"/>
         </scene>
         <!--Your Mottainai-->
         <scene sceneID="fK7-sw-gD0">
             <objects>
                 <tableViewController id="Dqb-AM-Ymz" customClass="OutputMottianaiTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pA1-AT-60X">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -96,7 +96,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8JY-3A-8c1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="221"/>
+            <point key="canvasLocation" x="1250" y="1053"/>
         </scene>
         <!--Graph Mottainai View Controller-->
         <scene sceneID="eZK-On-dKE">
@@ -107,15 +107,15 @@
                         <viewControllerLayoutGuide type="bottom" id="RHG-PD-PrZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RcX-WJ-gD8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-qd-9kS" customClass="PNLineChart">
-                                <rect key="frame" x="13" y="122" width="295" height="337"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-qd-9kS" customClass="PNLineChart">
+                                <rect key="frame" x="13" y="122" width="739" height="793"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="An4-Zi-f9b">
-                                <rect key="frame" x="21" y="74" width="280" height="29"/>
+                                <rect key="frame" x="245" y="74" width="280" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="sHJ-Q0-IsS"/>
                                 </constraints>
@@ -131,7 +131,7 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="An4-Zi-f9b" secondAttribute="centerX" constant="-1" id="2CB-CJ-SY8"/>
                             <constraint firstItem="MSz-qd-9kS" firstAttribute="leading" secondItem="RcX-WJ-gD8" secondAttribute="leadingMargin" constant="-3" id="4F3-9C-8Dw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MSz-qd-9kS" secondAttribute="trailing" constant="-4" id="Rlc-sS-DKb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MSz-qd-9kS" secondAttribute="trailing" id="Rlc-sS-DKb"/>
                             <constraint firstItem="MSz-qd-9kS" firstAttribute="top" secondItem="An4-Zi-f9b" secondAttribute="bottom" constant="20" id="WZO-Jr-ibW"/>
                             <constraint firstItem="RHG-PD-PrZ" firstAttribute="top" secondItem="MSz-qd-9kS" secondAttribute="bottom" constant="60" id="efm-XF-eaR"/>
                             <constraint firstItem="An4-Zi-f9b" firstAttribute="top" secondItem="0dj-ZQ-DhW" secondAttribute="bottom" constant="10" id="lNf-cg-Ttj"/>
@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilV-Jt-rT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="221"/>
+            <point key="canvasLocation" x="2493" y="1037"/>
         </scene>
         <!--Data-->
         <scene sceneID="Qf8-YC-eq8">
@@ -161,7 +161,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oX2-Wq-qsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="221"/>
+            <point key="canvasLocation" x="172" y="1061"/>
         </scene>
     </scenes>
     <resources>
@@ -170,9 +170,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4">
-            <size key="portraitSize" width="320" height="568"/>
-            <size key="landscapeSize" width="568" height="320"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="768" height="1024"/>
+            <size key="landscapeSize" width="1024" height="768"/>
         </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>
