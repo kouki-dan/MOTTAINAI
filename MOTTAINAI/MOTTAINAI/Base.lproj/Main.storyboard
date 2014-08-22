@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blR-dJ-Z6R">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blR-dJ-Z6R">
                                 <rect key="frame" x="34" y="118" width="253" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="B9X-H9-QOZ"/>
+                                    <constraint firstAttribute="height" constant="253" id="BLp-ID-Sc3"/>
+                                </constraints>
                                 <state key="normal" title="Mottainai" image="Mottainai.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,6 +32,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="blR-dJ-Z6R" secondAttribute="centerX" id="guM-4U-QYl"/>
+                            <constraint firstAttribute="centerY" secondItem="blR-dJ-Z6R" secondAttribute="centerY" id="gzL-Zp-Tu3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mottainai" id="oMC-wd-OAI"/>
                 </viewController>
