@@ -39,7 +39,7 @@
                       @"3":@[@"4時間前",@"3時間前",@"2時間前",@"1時間前"],
                     };
     
-    self.selectedTerm = @"3";
+    self.selectedTerm = @"0";
 }
 
 - (void)segmentValueChanged:(id)sender
@@ -50,31 +50,67 @@
     [self drawGraph];
 }
 
+- (NSArray*)getMottainaiDataWithTerm:(NSInteger) term numberOfLimit:(NSInteger)limit
+{
+    
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    self.mottainai = [appDelegate getAllMottainai];
+    
+    NSMutableArray *mottainaiData = [NSMutableArray array];
+    for(int i = 0; i < limit; i++){
+        [mottainaiData addObject:@0];
+    }
+    
+    NSDate *now = [NSDate date];
+    for(Mottainai *mottainai in self.mottainai){
+        NSTimeInterval delta = [now timeIntervalSinceDate:mottainai.created];
+        NSInteger dataPos = (NSInteger) delta / term;
+        if(dataPos < limit){
+            dataPos = limit-dataPos-1;
+            mottainaiData[dataPos] =@( [ mottainaiData[dataPos] intValue] + 1 );
+        }
+    }
+    
+    return mottainaiData;
+}
+
+- (NSInteger)getTerm
+{
+    switch([self.selectedTerm intValue]){
+        case 0:
+            return 30*24*60*60;
+        case 1:
+            return 7*24*60*60;
+        case 2:
+            return 1*24*60*60;
+        case 3:
+            return 1*60*60;
+    }
+    return 0;
+}
+
 - (void)drawGraph
 {
 
-    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    self.mottainai = [appDelegate getAllMottainai];
-
-    /* 集計関数の使い方がわからないからループで集計 */
-    // TODO
-
+    //ラベル削除
     for (UIView *view in [self.lineChart subviews]) {
         [view removeFromSuperview];
     }
     
     NSArray *labels = [self.chartLabels valueForKey:self.selectedTerm];
     [self.lineChart setXLabels:labels];
-    
-    NSArray * data01Array = @[@60.1, @160.1, @126.4, @262.2];
+    NSArray *mottainaiData = [self getMottainaiDataWithTerm:[self getTerm]
+                                              numberOfLimit:[labels count]];
+
+
     PNLineChartData *data01 = [PNLineChartData new];
     data01.color = PNFreshGreen;
     data01.itemCount = self.lineChart.xLabels.count;
     data01.getData = ^(NSUInteger index) {
-        CGFloat yValue = [data01Array[index] floatValue];
+        CGFloat yValue = [mottainaiData[index] floatValue];
         return [PNLineChartDataItem dataItemWithY:yValue];
     };
-    
+
     self.lineChart.chartData = @[data01];
     [self.lineChart strokeChart];
 
@@ -82,11 +118,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-
-    
     [self drawGraph];
-    
-    
 }
 
 
