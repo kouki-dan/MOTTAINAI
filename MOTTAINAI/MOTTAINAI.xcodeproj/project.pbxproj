@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		1E11E2DD1928E3E300508731 /* GraphMottainaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphMottainaiViewController.h; sourceTree = "<group>"; };
 		1E11E2DE1928E3E300508731 /* GraphMottainaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphMottainaiViewController.m; sourceTree = "<group>"; };
-		1E5BB7C3191E5EA7004E99FA /* MOTTAINAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOTTAINAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5BB7C3191E5EA7004E99FA /* Mottainai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mottainai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5BB7C6191E5EA7004E99FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E5BB7C8191E5EA7004E99FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1E5BB7CA191E5EA7004E99FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -131,7 +131,7 @@
 		1E5BB7C4191E5EA7004E99FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E5BB7C3191E5EA7004E99FA /* MOTTAINAI.app */,
+				1E5BB7C3191E5EA7004E99FA /* Mottainai.app */,
 				1E5BB7E4191E5EA7004E99FA /* MOTTAINAITests.xctest */,
 			);
 			name = Products;
@@ -220,7 +220,7 @@
 			);
 			name = MOTTAINAI;
 			productName = MOTTAINAI;
-			productReference = 1E5BB7C3191E5EA7004E99FA /* MOTTAINAI.app */;
+			productReference = 1E5BB7C3191E5EA7004E99FA /* Mottainai.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1E5BB7E3191E5EA7004E99FA /* MOTTAINAITests */ = {
@@ -494,7 +494,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MOTTAINAI/MOTTAINAI-Prefix.pch";
 				INFOPLIST_FILE = "MOTTAINAI/MOTTAINAI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mottainai;
+				PROVISIONING_PROFILE = "47bacfde-6e9c-41b7-9c86-ba91980c88d5";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,10 +507,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kouki Saito (HSPXR438P9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MOTTAINAI/MOTTAINAI-Prefix.pch";
 				INFOPLIST_FILE = "MOTTAINAI/MOTTAINAI-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mottainai;
+				PROVISIONING_PROFILE = "47bacfde-6e9c-41b7-9c86-ba91980c88d5";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
