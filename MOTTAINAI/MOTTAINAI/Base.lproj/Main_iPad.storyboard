@@ -120,10 +120,10 @@
                                     <constraint firstAttribute="width" constant="280" id="sHJ-Q0-IsS"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="月"/>
-                                    <segment title="週"/>
-                                    <segment title="日"/>
-                                    <segment title="時間"/>
+                                    <segment title="Monthly"/>
+                                    <segment title="Weekly"/>
+                                    <segment title="Daily"/>
+                                    <segment title="Hourly"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>

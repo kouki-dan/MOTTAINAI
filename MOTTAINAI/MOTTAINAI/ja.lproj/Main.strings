@@ -1,0 +1,27 @@
+
+/* Class = "IBUISegmentedControl"; An4-Zi-f9b.segmentTitles[0] = "月"; ObjectID = "An4-Zi-f9b"; */
+"An4-Zi-f9b.segmentTitles[0]" = "月";
+
+/* Class = "IBUISegmentedControl"; An4-Zi-f9b.segmentTitles[1] = "週"; ObjectID = "An4-Zi-f9b"; */
+"An4-Zi-f9b.segmentTitles[1]" = "週";
+
+/* Class = "IBUISegmentedControl"; An4-Zi-f9b.segmentTitles[2] = "日"; ObjectID = "An4-Zi-f9b"; */
+"An4-Zi-f9b.segmentTitles[2]" = "日";
+
+/* Class = "IBUISegmentedControl"; An4-Zi-f9b.segmentTitles[3] = "時間"; ObjectID = "An4-Zi-f9b"; */
+"An4-Zi-f9b.segmentTitles[3]" = "時間";
+
+/* Class = "IBUIBarButtonItem"; title = "Graph"; ObjectID = "Bq1-9u-rJF"; */
+"Bq1-9u-rJF.title" = "グラフ";
+
+/* Class = "IBUITabBarItem"; title = "Data"; ObjectID = "bAz-hP-dpD"; */
+"bAz-hP-dpD.title" = "データ";
+
+/* Class = "IBUIButton"; normalTitle = "Mottainai"; ObjectID = "blR-dJ-Z6R"; */
+"blR-dJ-Z6R.normalTitle" = "Mottainai";
+
+/* Class = "IBUINavigationItem"; title = "Your Mottainai"; ObjectID = "hpV-qn-YYC"; */
+"hpV-qn-YYC.title" = "Your Mottainai";
+
+/* Class = "IBUITabBarItem"; title = "Mottainai"; ObjectID = "oMC-wd-OAI"; */
+"oMC-wd-OAI.title" = "Mottainai";

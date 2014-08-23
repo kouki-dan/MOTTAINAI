@@ -32,13 +32,31 @@
                                   action:@selector(segmentValueChanged:)
                         forControlEvents:UIControlEventValueChanged];
 
+    
     self.chartLabels = @{
-                      @"0":@[@"3ヶ月前",@"2ヶ月前",@"先月",@"今月"],
-                      @"1":@[@"3週前",@"先々週",@"先週",@"今週"],
-                      @"2":@[@"3日前",@"一昨日",@"昨日",@"今日"],
-                      @"3":@[@"4時間前",@"3時間前",@"2時間前",@"1時間前"],
+                      @"0":@[NSLocalizedString(@"3months", nil),
+                             NSLocalizedString(@"2months",nil),
+                             NSLocalizedString(@"1month",nil),
+                             NSLocalizedString(@"this month",nil)
+                            ],
+                      @"1":@[NSLocalizedString(@"3weeks", nil),
+                             NSLocalizedString(@"2weeks",nil),
+                             NSLocalizedString(@"1week",nil),
+                             NSLocalizedString(@"this week",nil)
+                             ],
+                      @"2":@[NSLocalizedString(@"3days", nil),
+                             NSLocalizedString(@"2days",nil),
+                             NSLocalizedString(@"yesterday",nil),
+                             NSLocalizedString(@"today",nil)
+                             ],
+                      @"3":@[NSLocalizedString(@"4hours", nil),
+                             NSLocalizedString(@"3hours",nil),
+                             NSLocalizedString(@"2hours",nil),
+                             NSLocalizedString(@"1hour",nil)
+                             ],
                     };
     
+        
     self.selectedTerm = @"0";
 }
 

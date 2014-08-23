@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  MOTTAINAI
+
+  Created by Kouki Saito on 2014/08/23.
+  Copyright (c) 2014年 Kouki. All rights reserved.
+*/
+"3months" = "3months";
+"2months" = "2months";
+"1month" = "1month";
+"this month" ="this month";
+
+"3weeks" = "3weeks";
+"2weeks" = "2weeks";
+"1week" = "1week";
+"this week" = "this week";
+
+
+"3days" = "3days";
+"2days" = "2days";
+"yesterday" = "yesterday";
+"today" = "today";
+
+"4hours"="4hours";
+"3hours" = "3hours";
+"2hours" = "2hours";
+"1hour" = "1hour";
