@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Kouki;
 				TargetAttributes = {
+					1E5BB7C2191E5EA6004E99FA = {
+						DevelopmentTeam = HSPXR438P9;
+					};
 					1E5BB7E3191E5EA7004E99FA = {
 						TestTargetID = 1E5BB7C2191E5EA6004E99FA;
 					};
@@ -491,11 +494,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MOTTAINAI/MOTTAINAI-Prefix.pch";
 				INFOPLIST_FILE = "MOTTAINAI/MOTTAINAI-Info.plist";
 				PRODUCT_NAME = Mottainai;
-				PROVISIONING_PROFILE = "47bacfde-6e9c-41b7-9c86-ba91980c88d5";
+				PROVISIONING_PROFILE = "7a49db4d-a5b7-4f8b-a7a7-a21a9a0230fd";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -507,12 +512,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kouki Saito (HSPXR438P9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MOTTAINAI/MOTTAINAI-Prefix.pch";
 				INFOPLIST_FILE = "MOTTAINAI/MOTTAINAI-Info.plist";
 				PRODUCT_NAME = Mottainai;
-				PROVISIONING_PROFILE = "47bacfde-6e9c-41b7-9c86-ba91980c88d5";
+				PROVISIONING_PROFILE = "7a49db4d-a5b7-4f8b-a7a7-a21a9a0230fd";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E5BB7C2191E5EA6004E99FA"
-               BuildableName = "MOTTAINAI.app"
+               BuildableName = "Mottainai.app"
                BlueprintName = "MOTTAINAI"
                ReferencedContainer = "container:MOTTAINAI.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E5BB7C2191E5EA6004E99FA"
-            BuildableName = "MOTTAINAI.app"
+            BuildableName = "Mottainai.app"
             BlueprintName = "MOTTAINAI"
             ReferencedContainer = "container:MOTTAINAI.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E5BB7C2191E5EA6004E99FA"
-            BuildableName = "MOTTAINAI.app"
+            BuildableName = "Mottainai.app"
             BlueprintName = "MOTTAINAI"
             ReferencedContainer = "container:MOTTAINAI.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E5BB7C2191E5EA6004E99FA"
-            BuildableName = "MOTTAINAI.app"
+            BuildableName = "Mottainai.app"
             BlueprintName = "MOTTAINAI"
             ReferencedContainer = "container:MOTTAINAI.xcodeproj">
          </BuildableReference>
